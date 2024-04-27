@@ -23,7 +23,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"notebook": {
-						"referenceName": "Notebook 1",
+						"referenceName": "ETL",
 						"type": "NotebookReference"
 					},
 					"snapshot": true,

@@ -1,0 +1,20 @@
+{
+	"name": "query taxi zones",
+	"properties": {
+		"folder": {
+			"name": "Demo"
+		},
+		"content": {
+			"query": "-- This is auto-generated code\nSELECT TOP 100 *\nFROM OPENROWSET(\n    BULK 'https://synapsecoursedlrp.dfs.core.windows.net/demo/taxi_zone.csv',\n    FORMAT = 'CSV',\n    HEADER_ROW = TRUE, -- Assuming the first row contains headers\n    PARSER_VERSION = '2.0'\n) AS result;\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "master",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
